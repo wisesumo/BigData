@@ -1,0 +1,30 @@
+DATA SCIENCE BASICS NOTES
+=========================
+
+Simple methods used to ensure representativeness
+- Simple Random Sampling
+- Stratified Sampling
+- Cluster Sampling
+- Systematic Sampling
+
+How product information is collected from an API
+
+Accessing Data Sets:  https://github.com/katychuang/python-data-sci-basics/blob/master/teachers_notes/api_example.py
+
+The data for doing this analysis is from a comparison shopping engine called ShopStyle.  http://www.shopstyle.com/
+
+They provide an API for developers to work with their data called Shopsense.  http://shopsense.shopstyle.com/landing
+
+
+
+
+When you need a Python library published at the Python Package Index, just type in pip install libraryname 
+
+matplotlib (1.4.2)
+NumPy (1.9.1)
+There is a newer version of NumPy currently out, but this course uses 1.9.1
+https://pypi.python.org/pypi
+
+check if the above libs are installed: pip list | grep "matplotlib*\|numpy*"
+
+
