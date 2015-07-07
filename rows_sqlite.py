@@ -8,6 +8,6 @@ with con:
     cur = con.cursor()
     cur.execute("INSERT INTO cities VALUES('Washington', 'DC')")
     cur.execute("INSERT INTO cities VALUES('Houston', 'TX')")
-    cur.execute("INSERT INTO weather VALUES('Washington', 2013, 'July', 'January')")
-    cur.execute("INSERT INTO weather VALUES('Houston', 2013, 'July', 'January')")
+    cur.execute("INSERT INTO weather VALUES('Washington', 2013, 'July', 'January', '69')")
+    cur.execute("INSERT INTO weather VALUES('Houston', 2013, 'July', 'January', '84')")
 
