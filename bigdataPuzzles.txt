@@ -1,2 +1,14 @@
-How would one implement a set, given search, insert and delete are the frequent queries (CS refresher)
+Puzzles:
+
+How would one implement a set, given search, insert and delete are the frequent queries (CS refresher).
+
+
+What happens to x, and why: x = [1, 10, 100]; y = x; y[1] = 20 (Python specifics)
+
+
+Why use a cursor while accessing DBs (Data science specifics)
+
+
+Read up and complete Unit 2.1 and if possible 2.2
+
 
