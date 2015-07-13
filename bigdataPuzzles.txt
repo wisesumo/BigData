@@ -1,12 +1,30 @@
 Puzzles:
 
-How would one implement a set, given search, insert and delete are the frequent queries (CS refresher).
+-- How would one implement a set, given search, insert and delete are the frequent queries (CS refresher).
+
+ A set is an unordered collection with no duplicate elements.
+
+ Curly braces or the set() function can be used to create sets.
+
+ To create an empty set you have to use set(), not {}; the latter creates an empty dictionary
 
 
-What happens to x, and why: x = [1, 10, 100]; y = x; y[1] = 20 (Python specifics)
+Sets are created with either set() or {}. Because they work in the same way as mathematical sets, intersection, union, and difference operations work as you would expect:
+
+my_set = {1, 2, 2, 3, 4, 5, 6, 7}
 
 
-Why use a cursor while accessing DBs (Data science specifics)
+-- What happens to x, and why: x = [1, 10, 100]; y = x; y[1] = 20 (Python specifics)
+
+This is called mutability and it is a feature of Python lists to make working with them more natural-feeling
+https://courses.thinkful.com/data-001v2/assignment/1.1.3
+
+http://stackoverflow.com/questions/11222440/python-variable-reference-assignment
+
+http://www.python-course.eu/variables.php
+Changing Data Types and Storage Locations
+
+-- Why use a cursor while accessing DBs (Data science specifics)
 
 
 Read up and complete Unit 2.1 and if possible 2.2
