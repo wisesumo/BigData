@@ -1,0 +1,139 @@
+In statistics, the "center" of a data set contains useful information. 
+
+There are three basic pieces of information that capture the center of a distribution:
+
+    mean: also known as the average--the sum of all the values in a set, divided by the number of values. Mu denotes the mean of a population, while xbar denotes the mean of a sample.
+   
+    median: the middle number of a set of numbers arranged in numerical order. If the number of values in a set is even, then the median is the sum of the two middle values, divided by 2 (in other words, the mean of the two middle values).
+   
+   
+    mode: the most frequent value in a set. A set can have more than one mode. If there are two modes, the set is said to be bimodal.
+
+    
+
+    range: the difference between the largest and smallest values of a set (i.e., the largest value minus the smallest value).
+
+    variance: the measure of distribution about the mean. How close or far are values in a set from the mean? To calculate this by hand you would do the following: take the sum of (x - mu)^2 for all values of x, and divide by the number of data points. 
+    The variance of a sample (s^2) is found by taking the sum of (x - xbar)^2 for all values of x, and dividing by the number of data points - 1.
+
+    standard deviation: how close or far values in a set are from the mean. If values are concentrated around the mean, the standard deviation will be small. If values are spread far from the mean, the standard deviation will be large. Standard deviation is calculated by taking the square root of the variance.
+
+
+    relative variability: the standard deviation divided by the mean. The relative variability is useful for comparing variation between samples.
+
+=========
+
+
+Depending on the hypothesis, and especially on the sample, different statistical tests will be appropriate. For example, the Chi Square test is appropriate for categorical variables, while the Wilcoxon Rank-Sum test is better for continuous variables.
+
+The probability that the result occurred by chance is referred to as the p-value, and the threshold is usually indicated by alpha. A statistically significant result is one whose p-value < alpha. A p-value less than 0.05 indicates we can reject the null hypothesis. A p-value greater than 0.05 indicates that there is not enough evidence to reject the null hypothesis.
+
+https://medium.com/@maradydd/the-null-hypothesis-loves-you-and-wants-you-to-be-happy-3189413d8cd0
+
+=========
+
+Statistics Notation
+
+This web page describes how symbols are used on the Stat Trek web site to represent numbers, variables, parameters, statistics, etc.
+Capitalization
+
+In general, capital letters refer to population attributes (i.e., parameters); and lower-case letters refer to sample attributes (i.e., statistics). For example,
+
+    P refers to a population proportion; and p, to a sample proportion.
+    X refers to a set of population elements; and x, to a set of sample elements.
+    N refers to population size; and n, to sample size.
+
+Greek vs. Roman Letters
+
+Like capital letters, Greek letters refer to population attributes. Their sample counterparts, however, are usually Roman letters. For example,
+
+    μ refers to a population mean; and x, to a sample mean.
+    σ refers to the standard deviation of a population; and s, to the standard deviation of a sample.
+
+Population Parameters
+
+By convention, specific symbols represent certain population parameters. For example,
+
+    μ refers to a population mean.
+    σ refers to the standard deviation of a population.
+    σ2 refers to the variance of a population.
+    P refers to the proportion of population elements that have a particular attribute.
+    Q refers to the proportion of population elements that do not have a particular attribute, so Q = 1 - P.
+    ρ is the population correlation coefficient, based on all of the elements from a population.
+    N is the number of elements in a population.
+
+Sample Statistics
+
+By convention, specific symbols represent certain sample statistics. For example,
+
+    x refers to a sample mean.
+    s refers to the standard deviation of a sample.
+    s2 refers to the variance of a sample.
+    p refers to the proportion of sample elements that have a particular attribute.
+    q refers to the proportion of sample elements that do not have a particular attribute, so q = 1 - p.
+    r is the sample correlation coefficient, based on all of the elements from a sample.
+    n is the number of elements in a sample.
+
+Simple Linear Regression
+
+    Β0 is the intercept constant in a population regression line.
+    Β1 is the regression coefficient (i.e., slope) in a population regression line.
+    R2 refers to the coefficient of determination.
+    b0 is the intercept constant in a sample regression line.
+    b1 refers to the regression coefficient in a sample regression line (i.e., the slope).
+    sb1 refers to the refers to the standard error of the slope of a regression line.
+
+Probability
+
+    P(A) refers to the probability that event A will occur.
+    P(A|B) refers to the conditional probability that event A occurs, given that event B has occurred.
+    P(A') refers to the probability of the complement of event A.
+    P(A ∩ B) refers to the probability of the intersection of events A and B.
+    P(A ∪ B) refers to the probability of the union of events A and B.
+    E(X) refers to the expected value of random variable X.
+    b(x; n, P) refers to binomial probability.
+    b*(x; n, P) refers to negative binomial probability.
+    g(x; P) refers to geometric probability.
+    h(x; N, n, k) refers to hypergeometric probability.
+
+Counting
+
+    n! refers to the factorial value of n.
+    nPr refers to the number of permutations of n things taken r at a time.
+    nCr refers to the number of combinations of n things taken r at a time.
+
+Set Theory
+
+    A ∩ B refers to the intersection of events A and B.
+    A ∪ B refers to the union of events A and B.
+    {A, B, C} refers to the set of elements consisting of A, B, and C.
+    {∅} refers to the null set.
+
+Hypothesis Testing
+
+    H0 refers to a null hypothesis.
+    H1 or Ha refers to an alternative hypothesis.
+    α refers to the significance level.
+    Β refers to the probability of committing a Type II error.
+
+Random Variables
+
+    Z or z refers to a standardized score, also known as a z score.
+    zα refers to the standardized score that has a cumulative probability equal to 1 - α.
+    tα refers to the t score that has a cumulative probability equal to 1 - α.
+    fα refers to a f statistic that has a cumulative probability equal to 1 - α.
+    fα(v1, v2) is a f statistic with a cumulative probability of 1 - α, and v1 and v2 degrees of freedom.
+    Χ2 refers to a chi-square statistic.
+
+Special Symbols
+
+Throughout the site, certain symbols have special meanings. For example,
+
+    Σ is the summation symbol, used to compute sums over a range of values.
+    Σx or Σxi refers to the sum of a set of n observations. Thus, Σxi = Σx = x1 + x2 + . . . + xn.
+    sqrt refers to the square root function. Thus, sqrt(4) = 2 and sqrt(25) = 5.
+    Var(X) refers to the variance of the random variable X.
+    SD(X) refers to the standard deviation of the random variable X.
+    SE refers to the standard error of a statistic.
+    ME refers to the margin of error.
+    DF refers to the degrees of freedom.

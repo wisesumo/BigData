@@ -24,8 +24,9 @@ http://stackoverflow.com/questions/11222440/python-variable-reference-assignment
 http://www.python-course.eu/variables.php
 Changing Data Types and Storage Locations
 
--- Why use a cursor while accessing DBs (Data science specifics)
 
+-- Why use a cursor while accessing DBs (Data science specifics)
+irratetor saves in memory space .... go over the whole data ... fine for small data set but for millions of records its impoosible to bring everything into memory ... just one at a time and ask if their is a next entry .. if not just stop
 
 Read up and complete Unit 2.1 and if possible 2.2
 
