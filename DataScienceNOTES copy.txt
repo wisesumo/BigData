@@ -1,0 +1,40 @@
+LINEAR MODEL
+
+A linear model is a model in which the dependent variable varies linearly with the independent variable. In other words, the dependent variable is directly proportional to the independent variable.
+
+Linear regression is a technique for fitting a straight line to data, from which we can determine the slope and the y-intercept of the line - and the equation of the line (y = mx + b) is our linear model. 
+
+https://courses.thinkful.com/data-001v2/assignment/2.3.1
+
+
+LOGISTIC REGRESSION
+
+linear regression assumes a continuous response from a continuous input, but often variables aren't continuous numbers but exist in categories. 
+
+Logistic regression takes the same basic idea that one variable can influence another and applies it to the class of variables that exist as discrete values like "yes" or "no", "overweight" or "underweight", etc. 
+
+
+As with linear regression, logistic regression models the relationship between dependent and independent variables. This time we are concerned with categorical variables (e.g. yes or no, heads or tails), and logistic regression helps us predict the likelihood of events occurring. Essentially, we want to know what the odds are that we'll win instead of lose. 
+
+Odds ratios tell us the probability of one thing happening as it compares to the probability of another thing happening. If someone tells you that the odds of winning are 1:4, that means there is 1 part chance of winning and 4 parts chance of losing. That means there's 5 parts total, and that the probability of winning is 1/5 = 0.2 = 20%. 
+
+BAYESIAN Probabilities
+
+The Bayesian notion of probability can be expressed as follows:
+
+posterior probability = (conditional probability x prior probability) / evidence
+
+The posterior probability is basically the probability that an observation belongs to some class based on its observed feature values.
+
+MULTIVARIATE ANALYSIS
+
+multivariate analysis, or the analysis of multiple variables. This is a field of inquiry that can encompass many methods, but in this case, we will start with trying to construct a linear regression with multiple features or explanatory variables. 
+
+
+MARKOV MODELS 
+
+Markov models are a useful abstraction that allow for processes that have are not entirely independent of their past. 
+
+A Markov process is one whose present state is influenced only by the state of the immediately prior to the present state.The present state in turn has a number of possible outcome states, whose relative likelihood may be different from other possible states. 
+
+The assumption that it doesn't matter what step number we are in is an assumption of time homogeneity. In other words, the present state is all that matters about the past. This is the key Markov assumption/property.

@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook version='8.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8100.14.0213.2024                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='OrderItems+ (JoinTables.xlsx)' inline='true' name='excel.41717.877767546299' version='8.2'>
+      <connection auto-extract='yes' class='excel' driver='Ace12' filename='C:\Users\Curt\Desktop\Exercise Files\Chapter02\JoinTables.xlsx' header='yes' imex='1'>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[OrderSummary$].[OrderNumber]'>
+              </expression>
+              <expression op='[OrderItems$].[OrderNumber]'>
+              </expression>
+            </expression>
+          </clause>
+          <relation name='OrderSummary$' table='[OrderSummary$]' type='table' />
+          <relation name='OrderItems$' table='[OrderItems$]' type='table' />
+        </relation>
+        <cols>
+          <map key='[Date]' value='[OrderSummary$].[Date]' />
+          <map key='[Day]' value='[OrderSummary$].[Day]' />
+          <map key='[Department]' value='[OrderItems$].[Department]' />
+          <map key='[Month]' value='[OrderSummary$].[Month]' />
+          <map key='[OrderItem]' value='[OrderItems$].[OrderItem]' />
+          <map key='[OrderNumber]' value='[OrderItems$].[OrderNumber]' />
+          <map key='[OrderSummary$_OrderNumber]' value='[OrderSummary$].[OrderNumber]' />
+          <map key='[Time]' value='[OrderSummary$].[Time]' />
+          <map key='[Total]' value='[OrderSummary$].[Total]' />
+          <map key='[Year]' value='[OrderSummary$].[Year]' />
+        </cols>
+      </connection>
+      <column datatype='real' name='[Day]' role='dimension' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='real' name='[OrderNumber]' role='dimension' type='ordinal'>
+      </column>
+      <column datatype='real' name='[OrderSummary$_OrderNumber]' role='dimension' type='ordinal'>
+      </column>
+      <column datatype='real' name='[Year]' role='dimension' type='quantitative'>
+      </column>
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='C:\Users\Curt\Desktop\Exercise Files\Chapter02\ChangeOrder.tde' schema='Extract' tablename='Extract' update-time='3/20/2014 4:05:11 AM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[Date]' value='[Extract].[Date]' />
+            <map key='[Day]' value='[Extract].[Day]' />
+            <map key='[Department]' value='[Extract].[Department]' />
+            <map key='[Month]' value='[Extract].[Month]' />
+            <map key='[Number of Records]' value='[Extract].[Number of Records]' />
+            <map key='[OrderItem]' value='[Extract].[OrderItem]' />
+            <map key='[OrderNumber]' value='[Extract].[OrderNumber]' />
+            <map key='[OrderSummary$_OrderNumber]' value='[Extract].[OrderNumber1]' />
+            <map key='[Time]' value='[Extract].[Time]' />
+            <map key='[Total]' value='[Extract].[Total]' />
+            <map key='[Year]' value='[Extract].[Year]' />
+          </cols>
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='157' timestamp-start='2014-03-20 04:05:11.843000' />
+          </refresh>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='OrderItems+ (JoinTables.xlsx)' name='excel.41717.877767546299' />
+          </datasources>
+          <datasource-dependencies datasource='excel.41717.877767546299'>
+            <column datatype='real' name='[Day]' role='dimension' type='quantitative'>
+            </column>
+            <column datatype='string' name='[Department]' role='dimension' type='nominal'>
+            </column>
+            <column datatype='string' name='[Month]' role='dimension' type='nominal'>
+            </column>
+            <column datatype='real' name='[Total]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[Day]' derivation='None' name='[none:Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month]' derivation='None' name='[none:Month:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[excel.41717.877767546299].[sum:Total:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[excel.41717.877767546299].[none:Day:qk]</rows>
+        <cols>([excel.41717.877767546299].[none:Month:nk] / [excel.41717.877767546299].[none:Department:nk])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[excel.41717.877767546299].[none:Day:qk]</field>
+          <field>[excel.41717.877767546299].[none:Department:nk]</field>
+          <field>[excel.41717.877767546299].[none:Month:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
